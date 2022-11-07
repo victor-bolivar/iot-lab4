@@ -28,34 +28,42 @@ public class Admin extends AppCompatActivity {
     }
 
     public void guardar (View view){
-
+        boolean fine = true;
         // 1. se obtiene la referencia a la db
         DatabaseReference ref = firebaseDatabase.getReference();
         DatabaseReference refHitos = ref.child("hitos");
 
         // 2. se obtienen los datos
         EditText editTextEquipo = findViewById(R.id.editTextTextEquipo);
+        if(!(editTextEquipo.getText().toString().toLowerCase().equals("alianza lima")
+        || editTextEquipo.getText().toString().toLowerCase().equals("universitario"))){
+            fine=false;
+        }
         EditText editTextTextNombreJugador = findViewById(R.id.editTextTextNombreJugador);
         EditText editTextTextApellidoJugador = findViewById(R.id.editTextTextApellidoJugador);
         EditText editTextTextHito = findViewById(R.id.editTextTextHito);
+        if(fine){
+            Hito hito = new Hito();
+            hito.setNombreEquipo(editTextEquipo.getText().toString());
+            hito.setNombreJugador(editTextTextNombreJugador.getText().toString());
+            hito.setApellidoJugador(editTextTextApellidoJugador.getText().toString());
+            hito.setHito(editTextTextHito.getText().toString());
 
-        Hito hito = new Hito();
-        hito.setNombreEquipo(editTextEquipo.getText().toString());
-        hito.setNombreJugador(editTextTextNombreJugador.getText().toString());
-        hito.setApellidoJugador(editTextTextApellidoJugador.getText().toString());
-        hito.setHito(editTextTextHito.getText().toString());
 
+            // 3. se guardan los datos
+            refHitos.push().setValue(hito).addOnSuccessListener(unused -> {
+                Toast.makeText(Admin.this, "Registrado correctamente", Toast.LENGTH_SHORT).show();
+            });
 
-        // 3. se guardan los datos
-        refHitos.push().setValue(hito).addOnSuccessListener(unused -> {
-            Toast.makeText(Admin.this, "Registrado correctamente", Toast.LENGTH_SHORT).show();
-        });
+            // 4. se resetean los valores
+            editTextEquipo.setText("");
+            editTextTextNombreJugador.setText("");
+            editTextTextApellidoJugador.setText("");
+            editTextTextHito.setText("");
+        }else{
+            Toast.makeText(this, "Solo son válidos los equipos Alianza Lima y Universitario", Toast.LENGTH_SHORT).show();
+        }
 
-        // 4. se resetean los valores
-        editTextEquipo.setText("");
-        editTextTextNombreJugador.setText("");
-        editTextTextApellidoJugador.setText("");
-        editTextTextHito.setText("");
 
 
     }

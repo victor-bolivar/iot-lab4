@@ -7,10 +7,10 @@
     tools:context=".EquipoVisitaActivity">
 
     <TextView
-        android:id="@+id/VisitaTextView"
+        android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
+        android:layout_marginStart="144dp"
         android:layout_marginTop="76dp"
         android:text="Equipo Visita"
         android:textSize="20sp"
@@ -18,38 +18,188 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/EquipoNombTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginBottom="540dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="36dp"
+        android:text="Universitario"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/VisitaTextView"
-        app:layout_constraintVertical_bias="0.42" />
-
-    <TextView
-        android:id="@+id/EquipoNombTextViewVisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/txtView" />
 
     <ImageView
-        android:id="@+id/imageViewvis"
+        android:id="@+id/imeView3"
         android:layout_width="wrap_content"
         android:layout_height="800px"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EquipoNombTextViewVisi"
+        app:layout_constraintTop_toBottomOf="@+id/imgeView"
         app:srcCompat="@drawable/cancha" />
+
+    <TextView
+        android:id="@+id/txtView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="244dp"
+        android:text="J.S.Murrugarra"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EquipoNombTxtView" />
+
+    <TextView
+        android:id="@+id/txtView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="392dp"
+        android:text="A.Quintero"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="N.Quina"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtView5" />
+
+    <TextView
+        android:id="@+id/txtView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="P.Quispe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView14"
+        app:layout_constraintTop_toBottomOf="@+id/txtView14" />
+
+    <TextView
+        android:id="@+id/txtView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="A.Corzo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView12"
+        app:layout_constraintTop_toBottomOf="@+id/txtView12" />
+
+    <TextView
+        android:id="@+id/txtView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="F.Alonso"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView7"
+        app:layout_constraintTop_toBottomOf="@+id/txtView7" />
+
+    <TextView
+        android:id="@+id/txtView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="392dp"
+        android:text="N.Cabanillas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="J.Guivin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView10"
+        app:layout_constraintTop_toBottomOf="@+id/txtView10" />
+
+    <TextView
+        android:id="@+id/txtView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="468dp"
+        android:text="A.Succar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="468dp"
+        android:text="J.Carvallo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="A.Polo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtView13"
+        app:layout_constraintTop_toBottomOf="@+id/txtView13" />
+
+    <ImageView
+        android:id="@+id/imgeView"
+        android:layout_width="69dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="169dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EquipoNombTxtView"
+        app:srcCompat="@drawable/ulogo" />
 
 
 

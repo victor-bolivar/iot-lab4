@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PUCP22-2/IOT/LABS/Lab4/iot-lab4/app/src/main/res/layout/activity_equipo_local.xml" value="0.33" />
+        <entry key="..\:/PUCP22-2/IOT/LABS/Lab4/iot-lab4/app/src/main/res/layout/activity_equipo_visita.xml" value="0.3569620253164557" />
+        <entry key="..\:/PUCP22-2/IOT/LABS/Lab4/iot-lab4/app/src/main/res/layout/activity_hitos.xml" value="0.33" />
+        <entry key="..\:/PUCP22-2/IOT/LABS/Lab4/iot-lab4/app/src/main/res/layout/activity_user.xml" value="0.1890625" />
+        <entry key="..\:/PUCP22-2/IOT/LABS/Lab4/iot-lab4/app/src/main/res/layout/hitos_rv.xml" value="0.33" />
         <entry key="..\:/Users/victo/Documents/PUCP/appsiot/lab4/app/src/main/res/layout/activity_admin.xml" value="0.4" />
         <entry key="..\:/Users/victo/Documents/PUCP/appsiot/lab4/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
       </map>
