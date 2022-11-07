@@ -15,7 +15,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void vistaAdmin(View view){
+        Intent intent=new Intent(this,Admin.class);
+        startActivity(intent);
+    }
 
+    public void vistaUser(View view){
+        Intent intent=new Intent(this,UserActivity.class);
+        startActivity(intent);
+    }
 
 
 }
