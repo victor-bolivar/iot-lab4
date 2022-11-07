@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab4"
         tools:targetApi="31">
-
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,38 +25,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name=".Admin"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:name=".EquipoLocalActivity"
+            android:exported="false"
+            android:parentActivityName=".AlineacionActivity" />
         <activity
-            android:name=".UserActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:name=".EquipoVisitaActivity"
+            android:exported="false"
+            android:parentActivityName=".AlineacionActivity" />
+        <activity
+            android:name=".HitosActivity"
+            android:exported="false"
+            android:parentActivityName=".UserActivity" />
         <activity
             android:name=".AlineacionActivity"
-            android:exported="true" >
+            android:exported="false"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

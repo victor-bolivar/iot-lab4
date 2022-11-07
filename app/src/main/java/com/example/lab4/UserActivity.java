@@ -27,5 +27,10 @@ public class UserActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void admin(View view){
 
+        Intent intent=new Intent(this,Admin.class);
+        startActivity(intent);
+
+    }
 }
